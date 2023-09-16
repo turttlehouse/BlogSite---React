@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import './AllBlogs.css'
 import axios from "axios"
+import { useNavigate } from 'react-router-dom'
 
 
 const AllBlogs = () => {
+  const navigate = useNavigate()
 
 
   const [blogs,setBlogs] = useState([])
@@ -51,6 +53,8 @@ const AllBlogs = () => {
                      <h4><b>{blog.title}</b></h4> 
                      <p style={{color:"red"}}>{blog.description}</p> 
                      <p>{blog.createdAt}</p>
+                     {/* see More lai anchor tag ma halera singleBlog page ma redirect garda pani hunthyo tara page reload hunxa tesaile useNavigate hooks use gareko */}
+                     <p onClick={()=>navigate("/singleBlog/"+ blog.id)} style={{textAlign:"center"}}>See More</p>  
                 </div>
             </div>
 
