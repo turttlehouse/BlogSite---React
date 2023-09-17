@@ -51,7 +51,7 @@ const AllBlogs = () => {
                 <img src={blog.avatar} alt="Avatar"  width="100%"/>
                 <div className="container">
                      <h4><b>{blog.title}</b></h4> 
-                     <p style={{color:"red"}}>{blog.description}</p> 
+                     <p style={{color:"red"}}>{blog.description.slice(0,100)}</p> 
 
                      
                      <p>{blog.createdAt}</p>

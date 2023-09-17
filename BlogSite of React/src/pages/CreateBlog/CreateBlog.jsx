@@ -63,7 +63,7 @@ const CreateBlog = () => {
 
         <textarea id="description" placeholder="description" name="description" rows="4" required ></textarea>
 
-        <input type="text" id="image" placeholder="image" name="avatar" accept="image/*" required />
+        <input type="text" id="image" placeholder="imageURL" name="avatar" accept="image/*" required />
 
         <input type="submit" value="Submit"/>
     </form>

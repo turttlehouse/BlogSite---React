@@ -1,40 +1,42 @@
 /* Navbar.css */
 
-/* Remove margin and padding from the body element */
-body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar {
-    background-color: #333;
-    padding: 10px 0;
+.navbar {
+    background-color:  #ff6600; /* Navbar background color */
+    color: #fff; /* Navbar text color */
+    padding: 1px ; /* Adjust padding for the Navbar content */
+    display: flex;
+    justify-content: center; /* Center-align the navigation list */
   }
   
   .nav-list {
     list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    display: flex;
+    padding: 0; /* Remove default list padding */
   }
   
   .nav-list li {
-    display: inline-block;
-    margin-right: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transitions on hover */
+    margin: 0; /* Remove margin on list items */
+    padding: 10px 20px; /* Add padding to create box effect */
+    border-radius: 5px; /* Add border radius for the box effect */
   }
   
-  .nav-list li:last-child {
-    margin-right: 0;
+  .nav-list li:hover {
+    transform: scale(1.05); /* Scale up the menu item on hover */
+    background-color: lightcoral; /* Background color on hover */
+    color: #fff; /* Text color on hover */
   }
   
-  .nav-list li a {
-    text-decoration: none;
-    color: #fff;
+  /* Style for the active menu item (if needed) */
+  .nav-list .active {
     font-weight: bold;
-    transition: color 0.3s ease;
   }
   
-  .nav-list li a:hover {
-    color: #ff6600;
+  /* Navbar.css */
+
+body {
+    margin: 0; /* Remove margin from the body */
+    padding: 0; /* Remove padding from the body */
   }
   
