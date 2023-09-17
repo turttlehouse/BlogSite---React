@@ -28,6 +28,9 @@ const Navbar = () => {
 
         {/* calling a function  */}
         <li onClick={handleAddBlogClick}>AddBlog</li>
+
+        <li onClick={()=>navigate("/contactpage")}>Contact</li>
+
         
 
         

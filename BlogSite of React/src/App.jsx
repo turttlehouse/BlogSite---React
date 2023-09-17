@@ -7,6 +7,7 @@ import AllBlogs from './pages/AllBlogs/AllBlogs'
 import SingleBlog from './pages/SingleBlog/SingleBlog'
 import CreateBlog from './pages/CreateBlog/CreateBlog'
 import EditBlog from './pages/EditBlog/EditBlog'
+import ContactPage from './pages/ContactPage/ContactPage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
       <Route path='/singleBlog/:id' element={<SingleBlog/>} />
       <Route path = '/createBlog' element={<CreateBlog/>}  />
       <Route path= '/editBlog/:id' element = {<EditBlog/>}  />
+      <Route path='/contactpage/' element = {<ContactPage/>}/>
 
      
     </Routes>

@@ -1,0 +1,39 @@
+/* SocialMediaLinks.css */
+
+.social-media-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  .social-media-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-media-list li {
+    margin-bottom: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-size: 18px;
+  }
+  
+  a:hover {
+    color: #ff6600;
+  }
+  
+  i.fa {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
