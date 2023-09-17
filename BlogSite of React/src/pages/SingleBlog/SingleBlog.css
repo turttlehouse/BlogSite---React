@@ -1,33 +1,72 @@
-/* Style for the blog post container */
+/* SingleBlog.css */
+
+/* Style the container for the blog post */
 .blog-post {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    margin: 20px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Style for the author avatar */
-.avatar {
-    margin-right: 20px;
-}
-
-.avatar img {
-    width: 100px;
-    height: 100px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the author's avatar */
+  .avatar {
+    flex: 1;
+    max-width: 100px;
+  }
+  
+  .avatar img {
+    width: 100%;
     border-radius: 50%;
-}
-
-/* Style for the blog post title */
-.post-title {
+  }
+  
+  /* Style the blog post content */
+  .post-content {
+    flex: 3;
+    padding: 0 20px;
+  }
+  
+  .post-title {
     font-size: 24px;
     margin-bottom: 10px;
-}
-
-/* Style for the blog post description */
-.post-description {
-    font-size: 16px;
     color: #333;
-}
+  }
+  
+  .post-description {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .created-at {
+    font-size: 14px;
+    color: #888;
+    margin-top: 10px;
+  }
+  
+  /* Style the action buttons (Delete and Edit) */
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e65100; /* Change button background color on hover */
+  }
+  
+  /* Style the "Created at" text */
+.created-at {
+    font-size: 14px;
+    color: #333; /* Adjust the text color to make it more visible */
+    margin-top: 10px;
+  }

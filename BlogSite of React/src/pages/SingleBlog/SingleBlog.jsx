@@ -2,6 +2,8 @@ import React, {useState, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import axios from 'axios';
 import Navbar from '../../components/Navbar/Navbar';
+import './SingleBlog.css'
+
 
 const SingleBlog = () => {
 
@@ -57,8 +59,11 @@ const SingleBlog = () => {
           <div className="post-content">
               <h1 className="post-title">{blog?.title}</h1>
               <p className="post-description">{blog?.description}</p>
+              <p className="created-at">Created at: {blog?.createdAt}</p>
           </div>
           <button onClick={deleteBlog}>Delete</button>
+          <button onClick={()=>navigate("/editBlog/"+ blog.id)}>Edit</button>
+          
       </div>
     </>
     

@@ -1,15 +1,68 @@
+/* BlogCard.css */
+
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 30%;
-    height: 5%;
-    margin-top :40px;
-  }
-  
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  .container {
-    padding: 2px 16px;
-  }
+  height: auto;
+  width: 300px; /* Adjust the card width as needed */
+  margin: 20px; /* Add margin for spacing between cards */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s; /* Smooth transform transition on hover */
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Scale up the card on hover */
+}
+
+.card img {
+  width: 100%;
+  height: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+h4 {
+  margin: 0;
+}
+
+p {
+  margin: 5px 0;
+}
+
+p:hover {
+  cursor: pointer; /* Change cursor on hover for clickable elements */
+  color: #ff6600; /* Change text color on hover */
+}
+
+
+.container {
+  padding: 16px;
+}
+
+h4 {
+  margin: 0;
+}
+
+p {
+  margin: 5px 0;
+}
+
+/* Style the "See More" button */
+.see-more {
+  text-align: center;
+  padding: 5px; /* Adjust the padding for button spacing */
+  background-color: #ff6600; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.see-more:hover {
+  background-color: #e65100; /* Change button background color on hover */
+  color: #fff; /* Ensure text remains visible on hover */
+}
