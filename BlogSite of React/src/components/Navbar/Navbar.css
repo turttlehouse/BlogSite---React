@@ -48,6 +48,24 @@ body {
     cursor: default; /* Change the cursor to default, indicating it's not clickable */
     transition: none; /* Remove the transition on hover effect */
   }
+
+/* Responsive styles for screens smaller than 768px (adjust breakpoints as needed) */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack navigation items vertically */
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center; /* Center-align items vertically */
+  }
+
+  .nav-list li {
+    width: 100%; /* Make each item full width */
+    text-align: center; /* Center-align text */
+  }
+}
+
   
 
    
