@@ -58,7 +58,7 @@ const AllBlogs = () => {
                      <p>{blog.createdAt}</p>
                      {/* see More lai anchor tag ma halera singleBlog page ma redirect garda pani hunthyo tara page reload hunxa tesaile useNavigate hooks use gareko */}
                      {/* <p onClick={()=>navigate("/singleBlog/"+ blog.id)} style={{textAlign:"center"}} className='seemore'>See More</p>   */}
-                     <p onClick={() => navigate('/singleBlog/' + blog.id)} className="see-more"> See More</p>
+                     <p onClick={() => navigate('/singleBlog/' + blog.id)} className="read-more"> Read More</p>
 
                 </div>
             </div>

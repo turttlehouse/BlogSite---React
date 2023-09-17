@@ -51,7 +51,7 @@ p {
 }
 
 /* Style the "See More" button */
-.see-more {
+.read-more {
   text-align: center;
   padding: 5px; /* Adjust the padding for button spacing */
   background-color: #ff6600; /* Button background color */
@@ -62,7 +62,7 @@ p {
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
 }
 
-.see-more:hover {
+.read-more:hover {
   background-color: #e65100; /* Change button background color on hover */
   color: #fff; /* Ensure text remains visible on hover */
 }

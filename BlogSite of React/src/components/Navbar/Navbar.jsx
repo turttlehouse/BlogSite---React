@@ -17,6 +17,8 @@ const Navbar = () => {
   return (
     <nav className="navbar">
     <ul className="nav-list">
+
+      <li id='myblog'>TechTrend Insights</li>
           {/* yesari navigation garda page reload hunxa */}
         {/* <li><a href="/">Home</a></li> */}  
 
@@ -30,6 +32,8 @@ const Navbar = () => {
         <li onClick={handleAddBlogClick}>AddBlog</li>
 
         <li onClick={()=>navigate("/contactpage")}>Contact</li>
+
+        
 
         
 

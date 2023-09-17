@@ -39,4 +39,24 @@ body {
     margin: 0; /* Remove margin from the body */
     padding: 0; /* Remove padding from the body */
   }
+
+/* Navbar.css */
+
+.nav-list li#myblog {
+    margin-right: auto;
+    pointer-events: none; /* Disable pointer events for the element */
+    cursor: default; /* Change the cursor to default, indicating it's not clickable */
+    transition: none; /* Remove the transition on hover effect */
+  }
+  
+
+   
+  
+
+  
+
+
+
+
+
   
