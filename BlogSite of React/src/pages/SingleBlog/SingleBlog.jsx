@@ -53,21 +53,21 @@ const SingleBlog = () => {
     <>
           <Navbar />
           <div className="blog-post">
-          <div className="avatar">
-              <img src={blog?.avatar} alt="Author Avatar" />
-          </div>
-          <div className="post-content">
-              <h1 className="post-title">{blog?.title}</h1>
-              <p className="post-description">{blog?.description}</p>
-              <p className="created-at">Created at: {blog?.createdAt}</p>
-          </div>
+            <div className="avatar">
+                <img src={blog?.avatar} alt="Author Avatar" />
+            </div>
+              <div className="post-content">
+                  <h1 className="post-title">{blog?.title}</h1>
+                  <p className="post-description">{blog?.description}</p>
+                  <p className="created-at">Created at: {blog?.createdAt}</p>
+              </div>
 
-          <div className="button-container">
-          <button onClick={()=>navigate("/editBlog/"+ blog.id)}>Edit</button>
+                <div className="button-container">
+                    <button onClick={()=>navigate("/editBlog/"+ blog.id)}>Edit</button>
 
-          <button onClick={deleteBlog}>Delete</button>
+                    <button onClick={deleteBlog}>Delete</button>
 
-          </div>
+                </div>
          
           
       </div>

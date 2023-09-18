@@ -101,8 +101,11 @@ button:hover {
   }
 
   .avatar {
-    width: 60%; /* Setting the  image width to 100%  responsiveness  ko lagi*/
-    max-width: none; /* Removing the max-width constraint */
+    max-width: 80px; /* adjusting the avatar size for mobile */
+  }
+
+  .avatar img {
+    max-width: 100%; /* Setting the  image width to 100% for responsiveness */
     height: auto; /* Maintaining the image's aspect ratio */
   }
 
