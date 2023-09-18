@@ -122,6 +122,7 @@ button:hover {
 
   .post-description {
     font-size: 14px; /* Adjusting description font size for mobile */
+    line-height: 1.2; /* Adjust line height for mobile to control spacing */
    
   
   }

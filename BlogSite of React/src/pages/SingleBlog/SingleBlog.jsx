@@ -53,6 +53,7 @@ const SingleBlog = () => {
     <>
           <Navbar />
           <div className="blog-post">
+            
             <div className="avatar">
                 <img src={blog?.avatar} alt="Author Avatar" />
             </div>
