@@ -1,25 +1,23 @@
-/* Navbar.css */
-
 .navbar {
     background-color:  #ff6600; /* Navbar background color */
     color: #fff; /* Navbar text color */
-    padding: 1px ; /* Adjust padding for the Navbar content */
+    padding: 1px ; /* Adjusting padding for the Navbar content */
     display: flex;
-    justify-content: center; /* Center-align the navigation list */
+    justify-content: center; /* Center-aligning the navigation list */
   }
   
   .nav-list {
     list-style: none;
     display: flex;
-    padding: 0; /* Remove default list padding */
+    padding: 0; /* Removing the default list padding */
   }
   
   .nav-list li {
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transitions on hover */
-    margin: 0; /* Remove margin on list items */
-    padding: 10px 20px; /* Add padding to create box effect */
-    border-radius: 5px; /* Add border radius for the box effect */
+    margin: 0; /* list items haruma margin hatauna lai*/
+    padding: 10px 20px; /* Adding padding to create box effect */
+    border-radius: 5px; /* Adding border radius for the box effect */
   }
   
   .nav-list li:hover {
@@ -28,7 +26,7 @@
     color: #fff; /* Text color on hover */
   }
   
-  /* Style for the active menu item (if needed) */
+  /* Styling for the active menu item (if needed) */
   .nav-list .active {
     font-weight: bold;
   }
@@ -36,20 +34,20 @@
   /* Navbar.css */
 
 body {
-    margin: 0; /* Remove margin from the body */
-    padding: 0; /* Remove padding from the body */
+    margin: 0; /* Removing margin from the body */
+    padding: 0; /* Removing padding from the body */
   }
 
 /* Navbar.css */
 
 .nav-list li#myblog {
     margin-right: auto;
-    pointer-events: none; /* Disable pointer events for the element */
-    cursor: default; /* Change the cursor to default, indicating it's not clickable */
-    transition: none; /* Remove the transition on hover effect */
+    pointer-events: none; /* Disabling pointer events for the element */
+    cursor: default; /* Changing the cursor to default, indicating that yo clickable xaina hai */
+    transition: none; /* Removing the transition on hover effect */
   }
 
-/* Responsive styles for screens smaller than 768px (adjust breakpoints as needed) */
+/* Responsive styles for screens smaller than 768px (hamile breakpoints adjust garna sakxau as needed) */
 @media screen and (max-width: 768px) {
   .navbar {
     flex-direction: column; /* Stack navigation items vertically */
@@ -61,7 +59,7 @@ body {
   }
 
   .nav-list li {
-    width: 100%; /* Make each item full width */
+    width: 100%; /* Making each item full width */
     text-align: center; /* Center-align text */
   }
 }

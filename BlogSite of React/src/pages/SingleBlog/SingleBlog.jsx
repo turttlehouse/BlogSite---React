@@ -61,8 +61,14 @@ const SingleBlog = () => {
               <p className="post-description">{blog?.description}</p>
               <p className="created-at">Created at: {blog?.createdAt}</p>
           </div>
-          <button onClick={deleteBlog}>Delete</button>
+
+          <div className="button-container">
           <button onClick={()=>navigate("/editBlog/"+ blog.id)}>Edit</button>
+
+          <button onClick={deleteBlog}>Delete</button>
+
+          </div>
+         
           
       </div>
     </>

@@ -1,72 +1,123 @@
-/* SingleBlog.css */
 
-/* Style the container for the blog post */
+/* Styling the container for the blog post */
 .blog-post {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Style the author's avatar */
-  .avatar {
-    flex: 1;
-    max-width: 100px;
-  }
-  
-  .avatar img {
-    width: 100%;
-    border-radius: 50%;
-  }
-  
-  /* Style the blog post content */
-  .post-content {
-    flex: 3;
-    padding: 0 20px;
-  }
-  
-  .post-title {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .post-description {
-    font-size: 16px;
-    color: #666;
-  }
-  
-  .created-at {
-    font-size: 14px;
-    color: #888;
-    margin-top: 10px;
-  }
-  
-  /* Style the action buttons (Delete and Edit) */
-  button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #ff6600;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #e65100; /* Change button background color on hover */
-  }
-  
-  /* Style the "Created at" text */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center-aligning elements horizontally */
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center-aligning text within the container */
+}
+
+/* Styling the author's avatar */
+.avatar {
+  flex: 1;
+  display: flex; /* Adding flex display */
+  justify-content: center; /* Horizontally centering the content */
+  align-items: center; /* Vertically centering the content */
+  max-width: 100px;
+  max-width: 100px;
+}
+
+
+
+.avatar img {
+  width: 300px;
+  height: 200px; /* Setting a fixed height to create a square format */
+  border-radius: 10%;
+
+}
+
+.avatar img:hover {
+  transform: scale(1.05);  /* image ko size scale up garna lai cursor placement garda  */
+}
+
+/* Styling the blog post content */
+.post-content {
+  padding: 0 20px;
+}
+
+.post-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.post-title:hover{
+  transform: scale(1.05);
+  background-color: #e65100;
+
+}
+
+.post-description {
+  font-size: 16px;
+  color: black;
+}
+
 .created-at {
-    font-size: 14px;
-    color: #333; /* Adjust the text color to make it more visible */
-    margin-top: 10px;
+  font-size: 14px;
+  color: black;
+  margin-top: 10px;
+}
+
+/* Styling the action buttons (Delete and Edit) */
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  display: inline-block; /* Display buttons inline */
+  margin-right: 10px; /* Add spacing between buttons */
+}
+
+button:hover {
+  background-color: #e65100; /* Change button background color on hover */
+  transform: scale(1.05);
+}
+
+/* Display buttons inline */
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Add space between buttons */
+}
+
+  /* Further singleblog page Responsive banauna lai  */
+
+  
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .blog-post {
+    flex-direction: column; /* Stacking elements vertically on mobile */
+    padding: 10px; /* Reducing the  padding for mobile */
   }
+
+  .avatar {
+    max-width: 80px; /* Adjusting the avatar size for mobile */
+  }
+
+  .post-content {
+    padding: 10px; /* Reducing padding for mobile */
+  }
+
+  .post-title {
+    font-size: 20px; /* Adjusting title font size for mobile */
+  }
+
+  .post-description {
+    font-size: 14px; /* Adjusting description font size for mobile */
+  }
+
+  button {
+    padding: 5px 10px; /* Adjusting button padding for mobile */
+    font-size: 14px; /* Adjusting  button font size for mobile */
+  }
+}

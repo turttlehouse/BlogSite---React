@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import './AllBlogs.css'
+
+// API hit hanna lai axios third party package ko use gareko ho
 import axios from "axios"
 import { useNavigate } from 'react-router-dom'
 import Footer from '../../components/Footer/Footer'
@@ -30,7 +32,7 @@ const AllBlogs = () => {
   }
 
 
-
+//First time users page ma auda yo function chalxa
   useEffect(()=>{
     // console.log("hello")
     fetchBlogs()

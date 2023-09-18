@@ -1,25 +1,27 @@
-/* BlogCard.css */
 
 .card {
   height: auto;
-  width: 300px; /* Adjust the card width as needed */
-  margin: 20px; /* Add margin for spacing between cards */
+  width: 300px; /* Adjusting the card width as needed */
+  margin: 20px; /*  margin haleko for spacing between cards */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s; /* Smooth transform transition on hover */
+  transition: transform 0.2s; /* Smooth transformation ko lagi hover garda transition dekhaunalai */
   background-color: #fff;
   border-radius: 5px;
   overflow: hidden;
 }
 
+
 .card:hover {
-  transform: scale(1.05); /* Scale up the card on hover */
+  transform: scale(1.05); /*card ma hover garda card scale up garna lai good user experience ko lagi*/
 }
 
+/* card ma vako image ko height,width set gareko */
 .card img {
   width: 100%;
   height: 50%;
 }
 
+/* card vitra ko content ra card ko box bich spacing gap milako */
 .container {
   padding: 16px;
 }
@@ -33,8 +35,8 @@ p {
 }
 
 p:hover {
-  cursor: pointer; /* Change cursor on hover for clickable elements */
-  color: #ff6600; /* Change text color on hover */
+  cursor: pointer; /* Changing the  cursor on hover for clickable elements */
+  color: #ff6600; /* Changing the text color on hover */
 }
 
 
@@ -50,7 +52,7 @@ p {
   margin: 5px 0;
 }
 
-/* Style the "See More" button */
+/*  "Read More" button ma style halna lai use gareko */
 .read-more {
   text-align: center;
   padding: 5px; /* Adjust the padding for button spacing */
@@ -59,10 +61,10 @@ p {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions ko lagi */
 }
 
 .read-more:hover {
-  background-color: #e65100; /* Change button background color on hover */
-  color: #fff; /* Ensure text remains visible on hover */
+  background-color: #e65100; /* Changing the  button background color on hover */
+  color: #fff; /* Ensuring that the text remains visible on hover */
 }
