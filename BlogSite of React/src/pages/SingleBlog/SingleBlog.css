@@ -26,11 +26,14 @@
 
 
 .avatar img {
-  width: 300px;
-  height: 200px; /* Setting a fixed height to create a square format */
+  width: 100%;
+  height: auto;
   border-radius: 10%;
-
+  max-width: 100%; /* Limit the image to its container width */
+  max-height: 200px; /* Limit the maximum height for responsiveness */
+  margin: 0;
 }
+
 
 .avatar img:hover {
   transform: scale(1.05);  /* image ko size scale up garna lai cursor placement garda  */
@@ -72,7 +75,7 @@
 /* Styling the action buttons (Delete and Edit) */
 button {
   margin-top: 10px;
-  padding: 10px 20px;
+  padding: 10px 2%; /* Adjust padding as needed */  
   background-color: #ff6600;
   color: #fff;
   border: none;
@@ -82,6 +85,9 @@ button {
   transition: background-color 0.3s ease;
   display: inline-block; /* Display buttons inline */
   margin-right: 10px; /* Add spacing between buttons */
+  flex-grow: 1; /* Allow buttons to grow within the available space */
+  margin-right: 10px; /* Add spacing between buttons */
+  max-width: calc(50% - 10px); /* Limit button width to 50% of container width with spacing */
 }
 
 button:hover {
@@ -93,6 +99,8 @@ button:hover {
 .button-container {
   display: flex;
   justify-content: space-between; /* Add space between buttons */
+  flex-wrap: wrap; /* Allow buttons to wrap to the next line on smaller screens */
+
 }
 
   /* Further singleblog page Responsive banauna lai  */
@@ -101,19 +109,23 @@ button:hover {
 
 
 /* Media Query for Mobile Devices */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 320px) {
   .blog-post {
     flex-direction: column; /* Stacking elements vertically on mobile */
     padding: 10px; /* Reducing the  padding for mobile */
   }
 
   .avatar {
-    max-width: 80px; /* adjusting the avatar size for mobile */
+    max-width: 100px; /* adjusting the avatar size for mobile */
   }
 
   .avatar img {
-    max-width: 100%; /* Setting the  image width to 100% for responsiveness */
+    width: 100%; /* Setting the  image width to 100% for responsiveness */
     height: auto; /* Maintaining the image's aspect ratio */
+    border-radius: 10%; /* Maintain the border-radius */
+    max-width: 100%; /* Limit the image to its container width */
+    max-height: 200px; /* Limit the maximum height for responsiveness */
+    margin: 0;
   }
 
   .post-content {
@@ -134,5 +146,10 @@ button:hover {
   button {
     padding: 5px 10px; /* Adjusting button padding for mobile */
     font-size: 14px; /* Adjusting  button font size for mobile */
+  }
+
+   /* Adjust the button text size for smaller screens */
+   .button-container button {
+    font-size: 12px; /* Change the font size as needed for smaller screens */
   }
 }

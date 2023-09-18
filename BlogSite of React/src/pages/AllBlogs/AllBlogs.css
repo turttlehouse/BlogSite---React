@@ -68,3 +68,14 @@ p {
   background-color: #e65100; /* Changing the  button background color on hover */
   color: #fff; /* Ensuring that the text remains visible on hover */
 }
+
+
+/* Media Query for smaller screens, e.g., mobile devices */
+@media screen and (max-width: 768px) {
+  .read-more {
+    padding: 5px 10px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+
