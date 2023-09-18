@@ -57,6 +57,10 @@
   font-size: 16px;
   color: black;
   text-align: justify; /* Distributing the description text evenly across lines */
+  line-height: 1.4; /* Adjust the line height to control spacing between lines */
+  hyphens: auto;
+  
+  
 }
 
 .created-at {
