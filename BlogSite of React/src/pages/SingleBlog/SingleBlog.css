@@ -56,6 +56,7 @@
 .post-description {
   font-size: 16px;
   color: black;
+  text-align: justify; /* Distributing the description text evenly across lines */
 }
 
 .created-at {
@@ -93,6 +94,8 @@ button:hover {
   /* Further singleblog page Responsive banauna lai  */
 
   
+
+
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 768px) {
   .blog-post {
@@ -119,6 +122,8 @@ button:hover {
 
   .post-description {
     font-size: 14px; /* Adjusting description font size for mobile */
+   
+  
   }
 
   button {
