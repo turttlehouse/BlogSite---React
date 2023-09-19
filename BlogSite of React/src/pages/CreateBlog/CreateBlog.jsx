@@ -43,7 +43,16 @@ const CreateBlog = () => {
       // setBlogs(response.data)
 
       // window.location.href="/"    //yesle reload hunxa submit garera home page ma redirect garda tesaile useNavigate vanne hooks use gareko ho
+     
+      //Form Submit vayepaxi message dekhauna lai ho tara direct redirect garda smooth ra uninterrupted user experience hunxa so not used
+      // alert("Blog successfully added!");
 
+      // const successMessage = document.getElementById("successmessage");
+      // successMessage.textContent = "Blog successfully added!";
+      
+
+      //Form submit garepaxi field haru clear garna lai ho 
+      // e.currentTarget.reset();
       navigate("/")
     }
     else{
@@ -66,6 +75,8 @@ const CreateBlog = () => {
         <input type="text" id="image" placeholder="imageURL" name="avatar" accept="image/*" required />
 
         <input type="submit" value="Submit"/>
+        {/* <p id="success-message" className="successmessage"></p> */}
+
     </form>
 </div>
   )
