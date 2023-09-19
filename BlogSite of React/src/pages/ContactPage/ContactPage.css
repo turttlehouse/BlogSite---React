@@ -29,11 +29,16 @@
   
   a:hover {
     color: #ff6600;
-  }
+    }
   
   i.fa {
     font-size: 25px;
     margin-right: 20px;
+  }
+  
+  i.fa:hover{
+    transform: scale(1.5);
+
   }
   
 
@@ -82,6 +87,8 @@
     padding: 10px 20px;
     font-size: 18px;
     cursor: pointer;
+    margin: 0 auto; /* Add this line to horizontally center the button */
+    display: block; /* Add this line to ensure it takes up full width */
   }
   
   button:hover {
